@@ -36,7 +36,6 @@ h6,
  */
 .sidebar-module {
   padding: 1rem;
-  margin-top: 2.5rem;
 }
 .sidebar-module-inset {
   padding: 1rem;
@@ -60,12 +59,20 @@ h6,
   border-radius: 2rem;
 }
 
+/*
+ * Blog name and description
+ */
+.blog-header {
+  padding-top: 1.75rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
 
 /*
  * Blog posts
  */
 .blog-post {
-    padding-top: 1.75rem;
     padding-bottom: 1.25rem;
     margin-bottom: 2rem;
     border-bottom: .05rem solid #eee;

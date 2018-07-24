@@ -1,0 +1,21 @@
+{
+  "name": "Elastic-Beanstalk-Sample-App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.279.1",
+    "body-parser": "latest",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "latest",
+    "express": "latest",
+    "growl": "^1.10.5",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "pageres": "latest",
+    "request": "latest",
+    "w3counter": "^3.0.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

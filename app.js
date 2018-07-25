@@ -23,18 +23,9 @@ if (cluster.isMaster) {
 
 // Code to run if we're in a worker process
 } else {
-    var AWS = require('aws-sdk');
     var express = require('express');
     var bodyParser = require('body-parser');
     const mainRoutes = require('./main');
-    const Pageres = require('pageres');
-
-    // move outside of worker process
-    const pageres = new Pageres({delay: 4, crop: 600})
-		.src('cryptomarketchains.com', ['600x500'], {crop: true})
-		.dest(__dirname + '/public/img/')
-		.run()
-		.then(() => console.log('done'));
 
     var app = express();
 

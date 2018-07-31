@@ -29,37 +29,98 @@
                             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About Me</a>
+                            <a class="nav-link" href="#bio">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline mt-2 mt-md-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                 </div>
             </nav>
         </header>
 
-        <div class="fullpage">
-            <div class="infocontainer">
+        <div class="fullpage first" id="home">
+            <div class="infocontainer smallinfo">
 
-                <h1 class="infotext">Brian Becker</h1>
+                <h1 class="infotext large-text centered">Brian Becker</h1>
+                
+                <h2 class="infotext medium-text centered">Hi!</h2>
+                <p class="infotext small-text centered">I'm a software engineer. Terrible at one-line descriptions, and always excited to learn.</p>
+                <hr class="line">
             </div>
         </div>
+        <div class="fullpage alternate" id="bio">
+            <div class="infocontainer smallinfo">
 
-        <div class="fullpage alternate">
+                <h1 class="infotext large-text centered">Briefly About Me</h1>
+                <br>
+                <p class="infotext small-text left">Born and raised in Sacramento, CA. Graduated UC Davis with honors, class of 2017. </p> 
+                <hr class="line">
+
+                <p class="infotext small-text left">I grew up around various computers; my dad has been building them since the 70's, so having our kitchen counter completely filled with pet projects we were working on together was extremely common. It was in middle school that I first started learning about the software side, and I knew then that was what I was going to base my career on. I love the feeling I get as I'm solving a "puzzle" and what I'm working on comes together, seeing decisions that I planned earlier on play out (hopefully for the better), learning new things and new ways of doing old things, and just simply building something (and the sense of accomplishment at its completion) that someone might find interesting or useful. I'm certainly not the most gifted person artistically, but software engineering allows me to exercise my creativity all the same.</p>
+                <br>
+            </div>
         </div>
+        <div class="projectpage not-first" id="projects">
+            <div class="infocontainer largeinfo">
+                <h1 class="infotext large-text">Projects</h1>
+                <br>
+                <div class="projectcontainer full">
 
-        <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2019 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
+                    <a href="/projects/cryptomarketchains">
+                        <div class="projectcard">
+                            <div class="cardcontents">
+                                <p class="cardtext cardtitle">Cryptocurrency Market Chains</p>
+                                <img src="../img/cmc/cmc_table_card.png" class="cardimage">
+                                <div class="buttoncontainer">
+                                    <object> 
+                                        <a href="#" class="relatedbutton">ExpressJS</a>
+                                    </object>
+                                    <object> 
+                                        <a href="#" class="relatedbutton">ExpressJS</a>
+                                    </object>
+                                    <object> 
+                                        <a href="#" class="relatedbutton">ExpressJS</a>
+                                    </object>
+                                    <object> 
+                                        <a href="#" class="relatedbutton">ExpressJS</a>
+                                    </object>
+                                    <object> 
+                                        <a href="#" class="relatedbutton">ExpressJS</a>
+                                    </object>
+                                    
+                                </div>
+                                <p class="cardtext carddescription">A demo site for tracking potentially profitable "chains" between different cryptocurrency markets</p> 
+                                
+                            </div>
+                        </div>
+                    </a>
 
+                </div>
 
+            </div>
+        </div>
+        <div class="fullpage alternate" id="contact">
+            <div class="infocontainer smallinfo">
+
+                <h1 class="infotext large-text">Contact</h1>
+                <br>
+                <p class="infotext small-text">Email is the best place to contact me. Feel free to say hello!</p>
+
+                <hr class="line">
+                <a class="infotext medium-text" href="mailto:brianbecker.dev@gmail.com"><u>brianbecker.dev@gmail.com</u></a>
+                <hr class="line">
+
+                <p class="infotext small-text">Have career related questions? Here's a PDF of my current resume. For a list of references please use my email above, and be prepared to prove your identity.</p>
+                <hr class="line">
+                <a class="infotext medium-text" href="/resume">Resume</a>
+                <hr class="line">
+                
+            </div>
+        </div>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -68,6 +129,5 @@
         <script>window.jQuery || document.write('<script src="/js/jquery/jquery.min.js"><\/script>')</script>
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap/bootstrap.min.js"></script>
-        <script src="/js/screenshotgetter.js"></script>
     </body>
 </html>

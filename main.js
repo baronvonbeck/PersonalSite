@@ -4,11 +4,12 @@ const request = require('request');
 const fs = require('fs');
 
 
-const ABOUT = '/about';
-const STATIC_PATH = __dirname + '/public/html/';
-const CONTACT = '/contact';
 const HOME = '/home';
+const STATIC_PATH = __dirname + '/public/html/';
+const RESUME_PATH = __dirname + '/public/resume/BrianBeckerResume.pdf';
 const PROJECTS = '/projects';
+const CRYPTO_MARKET_CHAINS = "/cryptomarketchains";
+const RESUME = '/resume';
 
 
 router.get('/', (req, res) => {
@@ -19,17 +20,12 @@ router.get(HOME, (req, res) => {
     res.sendFile(STATIC_PATH + 'home.html');
 });
 
-router.get(ABOUT, (req, res) => {
-    res.sendFile(STATIC_PATH + 'about.html');
+router.get(PROJECTS + CRYPTO_MARKET_CHAINS, (req, res) => {
+    res.sendFile(STATIC_PATH + PROJECTS + CRYPTO_MARKET_CHAINS + ".html");
 });
 
-router.get(CONTACT, (req, res) => {
-    res.sendFile(STATIC_PATH + 'contact.html');
+router.get(RESUME, (req, res) => {
+    res.sendFile(RESUME_PATH);
 });
-
-router.get(PROJECTS, (req, res) => {
-    res.sendFile(STATIC_PATH + 'projects.html');
-});
-
 
 module.exports = router;
